@@ -91,7 +91,7 @@ async function loadHostedMetadata(url) {
     }
 }
 
-cLass Classifier {
+class Classifier {
     
     async init(urls) {
         this.urls = urls;
