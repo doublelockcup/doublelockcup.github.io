@@ -1,7 +1,44 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
+        <meta name="description" content="HTML5 basics">
+        <meta name="keywords" content="HTML, CSS, JavaScript, Coffee, More Coffee">
+        <meta name="author" content="doublelockcup">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="600">
         <style>
+            
+            
+            
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            table {
+                border-spacing: 5px;
+            }
+            th, td {
+                padding: 15px;
+            }
+            th {
+                text-align: left;
+            }
+            table#t01 {
+                width: 100%;
+                background-color: #f1f1c1;
+            }
+            table#t01 tr:nth-child(even) {
+                background-color:#aaa;
+            }
+            table#t01 tr:nth-child(odd) {
+                background-color:#fff;
+            }
+            table#t01 th {
+                color: white;
+                background-color: black;
+            }
+            
+            
             #p01 {border: 1px solid powderblue; color:orange;background-color:powderblue; padding:10px;font-family: monospace;font-size: 80%;margin-left: 50px;margin-right:50px}
             
             p.error {
@@ -40,12 +77,61 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
+                
 }
 
 a:hover, a:active {
   background-color: red;
 }
+            ul.NV_menu {
+                display: inline
+                list-style-type: : none;
+                margin: 0;
+                padding:0;
+                overflow: hidden;
+                background-color: #333333;
             }
+            l1.NV_menu {
+                float: left;
+            }
+            l1.NV_menu a{
+                display: block;
+                color:white;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+            }
+            l1.NV_menu a:hover{
+                background-color: #111111;
+            }
+            .cities {
+  background-color: black;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
+            span.note {
+                font-size: 120%;
+                color: rebeccapurple;
+            }
+            
+            #myHeader {
+                background-color: lightblue;
+                color:black;
+                padding: 40px;
+                text-align: center;
+                border: 1px solid gold;
+            }
+            
+            .myHeader {
+                background-color: lightcyan;
+                color:black;
+                padding: 20px;
+                text-align: center;
+                border: 2px solid silver;
+            }
+
+            
         </style>
         <title>Page Title</title>
         <meta charset="UTF-8">
@@ -53,6 +139,7 @@ a:hover, a:active {
     <body>
         <h1> This is a H1 heading</h1>
         <p id="Begin1"> This is a paragraph.</p>
+        <a href="#Coffee">If you want some quick coffee</a>
         <p><a href="https://www.w3schools.com">This is a link to W3Cschools</a></p>
         <p><img src="w3logo.png" alt="W3Schools.com" width="104" height="142"></p>
         <p><button>Click me</button></p>
@@ -279,6 +366,264 @@ close to 5 million globally.
     <img src="bandai_namco_vs_klonoa_by_malahayata-dc09gyc.gif" style="width:auto;">
     </picture>
     
+    <table style="width:100%; background-color: dodgerblue;">
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+    <table style="width:100%">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Telephone</th>
+        </tr>
+        <tr>
+            <td>Panda Express</td>
+            <td>12345678</td>
+            <td>12345679</td>
+        </tr>
+    </table>
+    <table style="width:100%">
+        <tr>
+            <th>Name:</th>
+            <td>Junzi</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telephone:</th>
+            <td>987654321</td>
+        </tr>
+        <tr>
+            <td>998877665</td>
+        </tr>
+        
+    </table>
+    <table style="width:100%">
+        <caption>Monthly savings</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Janurary</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>$150</td>
+        </tr>
+        
+    </table>
+    <hr>
+    <table id="t01">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+        <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+        <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+        <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+</table>
+    
+    <p>Unordered HTML List</p>
+    <ul style="list-style-type:disc;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+    <ul style="list-style-type:circle;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+    </ul>
+    <ul style="list-style-type:square;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+    </ul>
+    <ul style="list-style-type:none;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+    </ul>
+    
+    <p>Ordered List</p>
+    <ol>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    
+    <ol type='A'>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol type='a'>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol type='I'>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol type='i'>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    
+    <p><b><sup>HTML</sup> <sub>Desciption</sub> Lists</b></p>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>-White cold drink</dd>
+    </dl>
+    <p style="background-color:aqua"><sup>Nested</sup><sub>Lists</sub></p>
+    <ul style="list-style-type: armenian">
+        <li>Coffee</li>
+        <li>Tea
+            <ul style="list-style-type: georgian">
+                <li>Red Tea</li>
+                <li>Green Tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+    <ol start="50">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+    <p style="font-size:120%;color:darkorange;
+    style list horizontally, to create ">a navigation menu:
+    </p>
+    
+    <ul class="NV_menu">
+        <li><a class="NV_menu"href="https://www.nintendo.com/switch/">Switch</a></li>
+        <li><a class="NV_menu" href="https://www.nintendo.com/wiiu/what-is-wiiu">Wii U</a></li>
+        <li><a class="NV_menu"  href="https://www.xbox.com/en-US/">XBOX</a></li>
+        <li><a  class="NV_menu" href="https://www.playstation.com/en-us/">Playstation</a></li>
+        
+        
+    </ul>
+    <div>
+        <span>Hello</span>
+        <span>World</span>
+    </div>
+    <div style="background-color:black;color:white;padding:20px;">
+  <h2>London</h2>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+    <div>
+        <h1>My <span style="color:red">Important</span> Heading</h1>
+    </div>
+    <div class="cities">
+  <h2>London</h2>
+  <p>London is the capital of England.</p>
+</div>
+
+<div class="cities">
+  <h2>Paris</h2>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div class="cities">
+  <h2>Tokyo</h2>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+    <hr>
+    <h1>My <span class="note"> Important</span> Heading</h1>
+    <p>This is some <span class="note">important</span>text.</p>
+    <hr>
+    <h2>Using The class attribute in javascript</h2>
+    <p><i>Click the button, to hide all elements sith the class name "city", with JavaScript</i></p>
+    
+    <button onclick="myFunction()">Hide elements</button>
+    <button onclick="myFunction2()">Show elements</button>
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
+    
+    <h2 class="city">Pairs</h2>
+    <p>Paris is the capital of France.</p>
+    
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    <hr>
+    <h1 id="myHeader">Good Morning</h1>
+    <h2 id="Coffee">Coffee Here</h2>
+    <p title="More JavaScript" style="font-family: serif">and</p>
+    <h3 id="h3id">drink it!</h3>
+    <button onClick="displayResult()">Tips $1</button>
+    
+    <h1 class="myHeader">News
+    </h1>
+    <iframe src="https://www.nintendo.com/" style="height:50%; border:none; display: inline"></iframe>
+    <iframe src="https://www.bandainamcoent.com/" style="height:50%; border:none; display: inline"></iframe>
+    <iframe src="https://www.nintendo.com/3ds/features#take-a-closer-look" style="height:50%; border:none; display: inline"></iframe>
+    <iframe src="https://www.nintendo.com/games/switch/" style="height:50%; border:none; display: inline"></iframe>
+    
+    <hr>
+    <h1>Some works</h1>
+    <iframe src="https://www.nintendo.com/games/switch/" name="iframe_a" style="width:auto;height: auto;border:none;"></iframe>
+    <p> <a href="https://library.columbia.edu/" target="iframe_a" style="padding:10px">Back to work man.</a></p>
+    <hr>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Show Time and Date</button>
+    <p id="demo"></p>
+    <hr>
+    <p>HTML Entities</p>
+    <p>&copy;DoubleLockCup</p>
+    
+    <script>
+        function displayResult() {
+            document.getElementById("h3id").innerHTML = "Have a nice day!";
+        }
+        function myFunction() {
+            var x = document.getElementsByClassName("city");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+        
+        function myFunction2() {
+            var x = document.getElementsByClassName("city");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "block";
+            }
+        }
+    </script>
+    <noscript>Sorry, your browser does not support JavaScript</noscript>
     
 </body>
 </html>
